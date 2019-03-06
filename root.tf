@@ -34,4 +34,8 @@ resource "aws_s3_bucket" "terraform" {
       days = 30
     }
   }
+
+  tags {
+    Project = "root.tf"
+  }
 }

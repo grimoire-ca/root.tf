@@ -25,3 +25,10 @@ terraform {
 The user running Terraform must also have access to the `terraform.grimoire` bucket. In practice, an administrative user is strongly encouraged.
 
 Replace `my-project` with a key unique to the project.
+
+## Tagging
+
+This project tags its objects with `Project = "root.tf"`, matching the
+canonical base name of the Git repository. This convention is intended to help
+with billing and with tracking down the source of rogue objects. It is strongly
+recommended that downstream projects follow suit.
