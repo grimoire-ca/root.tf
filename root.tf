@@ -39,3 +39,5 @@ resource "aws_s3_bucket" "terraform" {
   }
 }
 
+resource "null_resource" "test" {
+}
