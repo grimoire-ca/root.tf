@@ -38,6 +38,3 @@ resource "aws_s3_bucket" "terraform" {
     Project = "root.tf"
   }
 }
-
-resource "null_resource" "test" {
-}
